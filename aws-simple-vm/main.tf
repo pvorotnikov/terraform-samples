@@ -23,7 +23,7 @@ provider "aws" {
 # Resources
 # ================================
 resource "aws_instance" "photon_server" {
-  ami = "ami-01e691056f389ab72"
+  ami = "ami-0d2bbd5b359314b44"
   instance_type = "t4g.nano"
 
   tags = {
