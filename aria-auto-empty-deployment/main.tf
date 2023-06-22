@@ -10,34 +10,6 @@ terraform {
   required_version = ">= 0.13"
 }
 
-# ================================
-# Variables declaration
-# ================================
-variable "url" {
-  type = string
-  default = "https://api.mgmt.cloud.vmware.com"
-}
-
-variable "refresh_token" {
-  type = string
-}
-
-variable "insecure" {
-  type = bool
-  default = false
-}
-
-variable "project_name" {
-  type = string
-}
-
-variable "deployment_name" {
-  type = string
-}
-
-# ================================
-# Provider configuration
-# ================================
 provider "vra" {
   url           = var.url
   refresh_token = var.refresh_token
