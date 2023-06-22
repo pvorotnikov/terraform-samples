@@ -53,5 +53,6 @@ resource "aws_subnet" "private_subnet" {
   tags = {
     Name = "private"
     Owner = "${var.vpc_owner}"
+    Team = "${var.team_name}"
   }
 }
